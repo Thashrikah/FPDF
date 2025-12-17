@@ -19,3 +19,11 @@ or you can include the following in your composer.json file:
     }
 }
 ```
+<?php
+require('fpdf.php');
+$pdf = new FPDF();
+$pdf->AddPage();
+$pdf->SetFont('Arial','B',16);
+$pdf->Cell(40,10,'Hello Bibi!');
+$pdf->Output();
+?>
